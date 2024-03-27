@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anc1" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Label fx:id="lblsoru" layoutX="38.0" layoutY="39.0" text="F(x)=x²+4x+4 denklemi için girilen x değerine göre hesaplayınız? " />
+      <TextField fx:id="txtdeger" layoutX="96.0" layoutY="78.0" prefHeight="36.0" prefWidth="210.0" promptText="x değerini giriniz" />
+      <Button fx:id="btnhesapla" layoutX="60.0" layoutY="148.0" mnemonicParsing="false" onAction="#btnhesapla" prefHeight="36.0" prefWidth="102.0" text="Hesapla" />
+      <Button fx:id="btnTemizle" layoutX="208.0" layoutY="148.0" mnemonicParsing="false" onAction="#btntemizle" prefHeight="36.0" prefWidth="102.0" text="Temizle" />
+      <TextField fx:id="textsonuc" layoutX="135.0" layoutY="216.0" prefHeight="128.0" prefWidth="150.0" promptText="f(x)=?" />
+   </children>
+</AnchorPane>
