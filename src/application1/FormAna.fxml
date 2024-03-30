@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application1.FormAnaController">
+   <children>
+      <AnchorPane fx:id="anchhorTüm" prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="anchor_sol" prefHeight="400.0" prefWidth="149.0" style="-fx-background-color: green;" />
+            <AnchorPane fx:id="anchor_sağ" layoutX="150.0" prefHeight="400.0" prefWidth="353.0" style="-fx-background-color: #e6f1dc;">
+               <children>
+                  <Button fx:id="btn_ic_click" layoutX="48.0" layoutY="91.0" mnemonicParsing="false" onAction="#btniç" prefHeight="58.0" prefWidth="120.0" text="İç Form" />
+                  <Button fx:id="btn_dış_click1" layoutX="188.0" layoutY="91.0" mnemonicParsing="false" onAction="#btndış" prefHeight="58.0" prefWidth="130.0" text="Dış Form " />
+                  <Button fx:id="btnmenü" layoutX="51.0" layoutY="168.0" mnemonicParsing="false" onAction="#btnmenü" prefHeight="50.0" prefWidth="120.0" text="İç Menü" />
+                  <Button layoutX="195.0" layoutY="168.0" mnemonicParsing="false" onAction="#trnsptDışForm" prefHeight="50.0" prefWidth="130.0" text="Transpanret Dış Form" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
