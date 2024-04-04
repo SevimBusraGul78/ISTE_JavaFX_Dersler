@@ -1,4 +1,4 @@
-package application1;
+package yedincihafta;
 
 import java.awt.image.AbstractMultiResolutionImage;
 

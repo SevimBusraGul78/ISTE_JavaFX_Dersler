@@ -1,4 +1,4 @@
-package application2;
+package dokuzuncuhafta;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
@@ -11,7 +11,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         try {
             // StageİslemlerıForm2.fxml dosyasını yükle
-            AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("TableView.fxml"));
+            AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("tableViewExtended.fxml"));
             
             // Bir sahne oluştur ve root'u içine yerleştir, boyutları 500x500
             Scene scene = new Scene(root, 500, 500);

@@ -1,4 +1,4 @@
-package application2;
+package sekizincihafta;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
