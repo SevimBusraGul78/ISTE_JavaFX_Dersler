@@ -17,10 +17,10 @@
                     <columns>
                       <TableColumn fx:id="id" prefWidth="75.0" text="İD" />
                       <TableColumn fx:id="kuladi" prefWidth="115.2000732421875" text="Kullanıcı Adi " />
-                        <TableColumn fx:id="sifre" prefWidth="67.199951171875" text="Sifre" />
                         <TableColumn fx:id="ortalmaa" prefWidth="95.199951171875" text="Ortalama" />
                         <TableColumn fx:id="yorum" prefWidth="155.20001220703125" text="Yorum " />
                         <TableColumn fx:id="secili" minWidth="0.0" prefWidth="0.0" text="Seç " />
+                        <TableColumn fx:id="secili" onEditStart="#btnsecilen" prefWidth="67.199951171875" text="seç " />
                         <TableColumn fx:id="islemler" prefWidth="91.20001220703125" text="İşlemler" />
                     </columns>
                   </TableView>

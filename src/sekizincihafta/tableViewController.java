@@ -61,13 +61,14 @@ public class tableViewController {
     @FXML
     void btngöster(ActionEvent event) {
           Kayitlar kayitlar=new Kayitlar();
-          if(kayıtlarTable.getSelectionModel().getSelectedIndex()!=-1) {
-        	  kayitlar=(Kayitlar) kayıtlarTable.getItems().get(0);//hepsinde sıfır verir 
-        	  lbldeğer.setText("Değer" +kayitlar.getId()+"Kullanıcı Adi "+kayitlar.getKul_ad() + "Sifre =" +kayitlar.getSifre() );
+          if(kayıtlarTable.getSelectionModel().getSelectedIndex()!=-2) //seçilen değer eğer -1 değilse
+        	  {
+        	  kayitlar=(Kayitlar) kayıtlarTable.getItems().get(kayıtlarTable.getSelectionModel().getSelectedIndex());//hepsinde sıfır verir 
+        	  lbldeğer.setText("Değer" +kayitlar.getId()+"\n"+"Kullanıcı Adi "+kayitlar.getKul_ad() + "Sifre =" +kayitlar.getSifre() );
           }else {
 			lbldeğer.setText("Herhangi bir kayıt seçilemedi .......");
 		}
-    	
+    	//get alıyorsun set kuruyorsun 
     	
     	
     }
@@ -79,7 +80,7 @@ public class tableViewController {
           //Seçili kaydı aldırmak için 
     	Kayitlar kayit=new Kayitlar();
     	  if(kayıtlarTable.getSelectionModel().getSelectedIndex()!=-1) {
-        	  kayit=(Kayitlar) kayıtlarTable.getItems().get(0);//hepsinde sıfır verir 
+        	  kayit=(Kayitlar) kayıtlarTable.getItems().get(kayıtlarTable.getSelectionModel().getSelectedIndex());//hepsinde sıfır verir 
         	 int idm=kayit.getId();
         	// txtkul.setText(kayit.getKul_ad());
         	 //txtsifre.setText(kayit.getSifre());
@@ -117,15 +118,17 @@ public class tableViewController {
     	btnekle.setTooltip(new Tooltip("Kayıt Eklemeyi sağlar .......")); //ekle butonuna geldiği zaman kayıt etmeyi sağlar 
        //ToolTip ekleme
     	
-    	Tooltip tip = new Tooltip();
-    	tip.setStyle("-fx-background-color:yellow;");
-    	tip.setText("Silme işlemi yapar" );
+    	 Tooltip tip = new Tooltip();
+    	 tip.setStyle("-fx-background-color:yellow;");
+    	 tip.setText("Silme işlemi yapar" );
+    	 
     	 Image img=new Image(getClass().getResourceAsStream("resim.jpg"));
          tip.setGraphic(new ImageView(img));  	
          btnsil.setTooltip(tip);
          
          //TableView veri gömme
          
+         //ObservableList<Kayitlar> veriler = FXCollections.observableArrayList();
          veriler=FXCollections.observableArrayList();
          veriler.add(new Kayitlar(1,"admin","145678"));
          veriler.add(new Kayitlar(2,"root","784521"));
