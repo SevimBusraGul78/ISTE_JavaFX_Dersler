@@ -16,6 +16,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class SampleController {
+	
+	public SampleController() {
+		baglanti=VeriTabanUtil.Baglan();
+	}
 
     @FXML
     private ResourceBundle resources;
